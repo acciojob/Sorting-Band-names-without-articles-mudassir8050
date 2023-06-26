@@ -1,4 +1,25 @@
 //your code here
+function sortBandNames(bandNames) {
+  // Remove articles ('a', 'an', 'the') from band names for sorting
+  const regex = /^(a|an|the)\s/i;
+  const sortedBandNames = bandNames
+    .map((name) => name.replace(regex, ''))
+    .sort((a, b) => a.localeCompare(b));
+
+  // Create the HTML list
+  const ul = document.createElement('ul');
+  ul.id = 'band';
+
+  sortedBandNames.forEach((bandName) => {
+    const li = document.createElement('li');
+    li.textContent = bandName;
+    ul.appendChild(li);
+  });
+
+  // Add the list to the document body or a specific element
+  document.body.appendChild(ul);
+}
+
 
 let bandNames = ['The Beatles', 'Led Zeppelin', 'Aerosmith', 'The Rolling Stones', 'Pink Floyd'];
 
