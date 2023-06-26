@@ -10,7 +10,7 @@ function sortBandNames(bandNames) {
   const ul = document.createElement('ul');
   ul.id = 'band';
 
-  sortedBandNames.forEach((bandName) => {
+  sortedBandNames.forEach((bandNames) => {
     const li = document.createElement('li');
     li.textContent = bandName;
     ul.appendChild(li);
