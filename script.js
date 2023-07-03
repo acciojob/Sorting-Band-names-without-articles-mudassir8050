@@ -24,6 +24,6 @@ def sort_band_names(band_names):
 
 
 # Example usage
-band_names =  ['The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'];
+band_names = ['The Beatles', 'Led Zeppelin', 'Aerosmith', 'The Rolling Stones', 'Anthrax']
 html_output = sort_band_names(band_names)
 print(html_output)
