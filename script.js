@@ -44,6 +44,9 @@ function sortBandNames(bandNames) {
   });
 }
 
+const bandNames = ['The Beatles', 'Radiohead', 'The Rolling Stones', 'Led Zeppelin', 'A Tribe Called Quest'];
+sortBandNames(bandNames);
+
 // // # Example usage
 // band_names = ['The Beatles', 'Led Zeppelin', 'Aerosmith', 'The Rolling Stones', 'Anthrax']
 // html_output = sort_band_names(band_names)
